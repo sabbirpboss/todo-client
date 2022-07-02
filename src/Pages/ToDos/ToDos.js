@@ -41,7 +41,7 @@ const ToDos = () => {
               }}
             />
             <button className="btn btn-square w-16" onClick={handleSubmit}>
-              Enter
+              ENTER
             </button>
           </div>
         </div>
