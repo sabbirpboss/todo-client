@@ -5,6 +5,9 @@ import Completed from "./Pages/Completed/Completed";
 import Homepage from "./Pages/Homepage/Homepage";
 import Navbar from "./Pages/Homepage/Navbar/Navbar";
 import ToDo from "./Pages/ToDos/ToDos";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import UpdateToDo from "./Pages/ToDos/UpdateToDo/UpdateToDo";
 
 function App() {
   return (
@@ -16,7 +19,9 @@ function App() {
           <Route path="/todo" element={<ToDo />} />
           <Route path="/complete" element={<Completed />} />
           <Route path="/calender" element={<Calender />} />
+          <Route path="/update/:id" element={<UpdateToDo />} />
         </Routes>
+        <ToastContainer />
       </div>
     </div>
   );
